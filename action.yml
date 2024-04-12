@@ -1,0 +1,14 @@
+name: 'Patch Package.resolved'
+description: 'Patch Xcode 15.3 Package.resolved issue'
+inputs:
+  workspacce:
+    description: 'Workspace name'
+    required: false
+    default: '*'
+runs:
+  using: "composite"
+  steps:
+    - name: Run Patch
+      run: patch.sh ${{ inputs.workspacce }}
+      shell: bash
+      
