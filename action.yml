@@ -9,6 +9,6 @@ runs:
   using: "composite"
   steps:
     - name: Run Patch
-      run: patch.sh ${{ inputs.workspacce }}
+      run: ./patch.sh ${{ inputs.workspacce }}
       shell: bash
       
